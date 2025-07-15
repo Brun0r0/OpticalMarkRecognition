@@ -1,34 +1,35 @@
-# Optical Mark Recognition (OMR) in MATLAB
+# 📝 Optical Mark Recognition (OMR) in MATLAB
 
-This project implements an Optical Mark Recognition (OMR) system using MATLAB. It automatically detects and identifies filled answer bubbles on scanned multiple-choice exam sheets through image processing techniques.
+This project implements an **Optical Mark Recognition (OMR)** system using MATLAB.  
+It automatically detects and identifies filled answer bubbles 🟤 on scanned multiple-choice exam sheets using image processing techniques.
 
-## Features
+## 🚀 Features
 
-- Automatic detection of answer areas
-- Skew correction based on reference marks
-- Binarization and segmentation
-- Analysis of connected components
-- Circularity-based recognition of marked answers
+- 🔍 Automatic detection of answer areas  
+- 📐 Skew correction using reference marks  
+- 🎛️ Grayscale conversion, binarization & segmentation  
+- 🧩 Analysis of connected components  
+- 🔵 Circularity-based recognition of marked answers
 
-## Technologies Used
+## 🛠️ Technologies Used
 
-- MATLAB
-- Image Processing Toolbox
+- 🧠 MATLAB  
+- 🧰 Image Processing Toolbox
 
-## How It Works
+## ⚙️ How It Works
 
-1. **Image Input:** Loads scanned images of the provided template.
-2. **Skew Correction:** Aligns the image using reference marks.
-3. **Preprocessing:** Converts the image to grayscale and applies binarization (e.g., Otsu's method).
-4. **Segmentation:** Identifies connected components.
-5. **Recognition:** Extracts features like area and circularity to detect filled answer marks.
+1. 📂 **Image Input:** Loads scanned images of the provided template.  
+2. 📏 **Skew Correction:** Aligns the image using reference marks.  
+3. 🖤 **Preprocessing:** Converts to grayscale and applies binarization (e.g., Otsu’s method).  
+4. 🧱 **Segmentation:** Identifies connected components.  
+5. 🧠 **Recognition:** Detects filled bubbles based on area and circularity.
 
-## How to Run
+## ▶️ How to Run
 
-1. Open MATLAB.
-2. Clone this repository and navigate to the folder.
-3. Run `main.m` to start processing.
+1. 📥 Open MATLAB.  
+2. 📁 Clone this repository and navigate to the project folder.  
+3. 🏃‍♂️ Run `main.m` to start the OMR process.
 
-## License
+## 📄 License
 
-This project is for educational purposes only.
+This project is for **educational purposes only**. 🎓
