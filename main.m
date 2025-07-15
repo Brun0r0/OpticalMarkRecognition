@@ -5,16 +5,16 @@
 %Limpeza
 clear, clc, close all;
 
-%Colocar o arquivo gabarito na pasta /gabaritos/
-gabaritoName = input("Digite o nome do gabarito: ", 's');
+%Colocar o arquivo gabarito na pasta /templates/
+gabaritoName = input("Enter the name of the template: ", 's');
 
-caminho = 'gabaritos/' + string(gabaritoName) + '.txt';
+caminho = 'templates/' + string(gabaritoName) + '.txt';
 
 % Lê o gabarito e aloca na array gabarito
 gabarito = ler_gabarito(caminho);
 
 % Leitura das folhas respostas na pasta
-caminho = "Folhas_Respostas/";
+caminho = "Answer sheets/";
 files = dir(caminho + "*.j*eg");
 
 qntFolhas = length(files);
@@ -56,7 +56,7 @@ for k = 1:qntFolhas
     end
 end
 
-% Salvando planilha "Notas"
-writetable(planilhaNotas, "Notas/Todas.xls");
+% Salvando planilha "Notes"
+writetable(planilhaNotas, "Notes/All.xls");
 
 disp(planilhaNotas);
