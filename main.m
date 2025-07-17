@@ -24,7 +24,7 @@ clear, clc, close all;
 %Colocar o arquivo gabarito na pasta /gabaritos/
 gabaritoName = input("Digite o nome do gabarito: ", 's');
 
-caminho = 'gabaritos/' + string(gabaritoName) + '.txt';
+caminho = 'templates/' + string(gabaritoName) + '.txt';
 
 % Lê o gabarito e aloca na array gabarito
 gabarito = ler_gabarito(caminho);
@@ -36,7 +36,7 @@ gabarito = ler_gabarito(caminho);
 % Lista de extensões suportadas
 extensoes = ["*.jpg", "*.jpeg", "*.png", "*.bmp", "*.tif", "*.tiff"];
 
-caminho = "Folhas_Respostas/";
+caminho = "Answer sheets/";
 files = [];
 
 % Buscar arquivos com cada extensão
@@ -94,7 +94,7 @@ for k = 1:qntFolhas
     end
 end
 
-% Salvando planilha "Notes"
+% Salvando planilha "Notas"
 writetable(planilhaNotas, "Notes/all.xls");
 
 disp(planilhaNotas);

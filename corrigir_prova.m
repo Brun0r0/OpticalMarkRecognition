@@ -31,5 +31,5 @@ function notaFinal = corrigir_prova(gabarito, respostas, name)
     % Concatenando tudo
     planilhaNotaIndividual = [planilhaNotaIndividual; linhaVazia; linhaFinal];
 
-    writetable(planilhaNotaIndividual, "Notas/individuais/" + name + ".xls");
+    writetable(planilhaNotaIndividual, "Notes/Individual/" + name + ".xls");
 end

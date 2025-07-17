@@ -5,14 +5,10 @@ function respostas = identificar_respostas(imagem)
 
     % Binarização com Otsu
     level = graythresh(imagem);
-    img_bw = imbinarize(imagem, level+0.1);
-
-    % Processo de erosão -> Melhora captura das bordas
-    %se = strel('disk', 1);
-    %img_bw = imerode(img_bw, se);
+    img_bw = imbinarize(imagem, level+0.05);
 
     % Utilização de dois regionprops ->
-        % Um para alternativas não preenchidas e outro para preenchidas
+    %    Um para alternativas não preenchidas e outro para preenchidas
     props_bg = regionprops(img_bw, ...
         "Circularity", "Area", "BoundingBox", "Centroid");
     props_fg = regionprops(~img_bw, ...
