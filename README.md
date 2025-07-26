@@ -18,11 +18,23 @@ It automatically detects and identifies filled answer bubbles 🟤 on scanned mu
 
 ## ⚙️ How It Works
 
-1. 📂 **Image Input:** Loads scanned images of the provided template.  
-2. 📏 **Skew Correction:** Aligns the image using reference marks.  
+1. 📂 **Image Input:** Loads scanned images of the provided template.
+2. 📏 **Skew Correction:** Aligns the image using reference marks.
 3. 🖤 **Preprocessing:** Converts to grayscale and applies binarization (e.g., Otsu’s method).  
-4. 🧱 **Segmentation:** Identifies connected components.  
+4. 🧱 **Segmentation:** Identifies connected components.
 5. 🧠 **Recognition:** Detects filled bubbles based on area and circularity.
+
+## 💬 Image examples
+
+<p style="display: flex; align-items: center;">
+  <img src="imgs/input.png" width="100" height="150">
+  <span style="font-size: 48px; margin: 0 30px;">➜</span>
+  <img src="imgs/rotated.png" width="100" height="150">
+  <span style="font-size: 48px; margin: 0 30px;">➜</span>
+  <img src="imgs/cutted.png" width="100" height="150">
+  <span style="font-size: 48px; margin: 0 30px;">➜</span>
+  <img src="imgs/bubbles.png" width="100" height="150">
+</p>
 
 ## ▶️ How to Run
 
