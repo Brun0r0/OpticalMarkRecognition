@@ -24,17 +24,46 @@ It automatically detects and identifies filled answer bubbles 🟤 on scanned mu
 4. 🧱 **Segmentation:** Identifies connected components.
 5. 🧠 **Recognition:** Detects filled bubbles based on area and circularity.
 
-## 💬 Image examples
+## 💬 Process Overview
 
-<p style="display: flex; align-items: center;">
-  <img src="imgs/input.png" width="100" height="150">
-  <span style="font-size: 48px; margin: 0 30px;">➜</span>
-  <img src="imgs/rotated.png" width="100" height="150">
-  <span style="font-size: 48px; margin: 0 30px;">➜</span>
-  <img src="imgs/cutted.png" width="100" height="150">
-  <span style="font-size: 48px; margin: 0 30px;">➜</span>
-  <img src="imgs/bubbles.png" width="100" height="150">
-</p>
+<div align="center">
+  
+### Input Image → Rotation → Cropping → Speech Bubbles Detection
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="imgs/input.png" width="150" height="230" alt="Original input image">
+      <br>
+      <b>📥 Input</b>
+      <br>
+      <sub>Original image</sub>
+    </td>
+    <td align="center">
+      <img src="imgs/rotated.png" width="150" height="230" alt="Rotated image">
+      <br>
+      <b>🔄 Rotated</b>
+      <br>
+      <sub>Auto-corrected orientation</sub>
+    </td>
+    <td align="center">
+      <img src="imgs/cutted.png" width="150" height="230" alt="Cropped image">
+      <br>
+      <b>✂️ Cropped</b>
+      <br>
+      <sub>Relevant area extracted</sub>
+    </td>
+    <td align="center">
+      <img src="imgs/bubbles.png" width="150" height="230" alt="Speech bubbles detected">
+      <br>
+      <b>💭 Detected</b>
+      <br>
+      <sub>Speech bubbles identified</sub>
+    </td>
+  </tr>
+</table>
+
+</div>
 
 ## ▶️ How to Run
 
